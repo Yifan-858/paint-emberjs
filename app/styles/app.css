@@ -1,1 +1,117 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+.links-container {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-container {
+  display: flex;
+  flex-shrink: 1;
+  background-color: black;
+  min-height: 4rem;
+}
+
+.left-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: #fbbf24;
+}
+
+.color-picker-container {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%;
+  background-color: #ef6dc2;
+}
+
+.picture-container {
+  display: flex;
+  flex: 1;
+}
+
+.grid-left {
+  display: flex;
+  flex: 1;
+  border-right: 2px dashed #4b5563;
+  padding: 1rem;
+}
+
+.grid-right {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+}
+
+.color-cubes-container {
+  display: flex;
+  margin: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.color-cubes {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.red {
+  background-color: red;
+}
+
+.teal {
+  background-color: teal;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.white {
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}

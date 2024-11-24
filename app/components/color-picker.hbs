@@ -1,0 +1,27 @@
+{{yield}}
+<div class="color-cubes-container">
+  {{#each
+    (array
+      "red"
+      "teal"
+      "yellow"
+      "blue"
+      "grey"
+      "white"
+      "black"
+      "purple"
+      "orange"
+      "pink"
+    )
+    as |color|
+  }}
+    <div class="color-cubes {{color}}" {{on "click" (fn @onChange color)}}>
+      {{#if (eq @color color)}}
+        🖌️
+      {{/if}}
+    </div>
+  {{/each}}
+</div>
+<h2>
+  color is
+  {{@color}}</h2>
